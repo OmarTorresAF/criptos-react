@@ -14,6 +14,7 @@ const InputSubmit = styled.input`
     font-size:20px;
     border-radius:5px;
     transition:background-color .3s ease;
+    margin-top: 30px;
     
     &:hover {
         background-color: #747dfe;
@@ -32,9 +33,9 @@ const Formulario = () => {
     <form>
         <SelectMonedas/>
 
-    <InputSubmit 
-        type="submit" 
-        value='Cotizar' />
+        <InputSubmit 
+            type="submit" 
+            value='Cotizar' />
     </form>
   )
 }
