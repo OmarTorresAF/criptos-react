@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 
 const Label = styled.label`
@@ -18,23 +17,21 @@ const Select = styled.select`
 `
 
 const useSelectMonedas = (label, opciones) => {
-  
-    const SelectMonedas = () => (
+  const SelectMonedas = () => (
         <>
-            <Label>{label}</Label>
+               <Label>{label}</Label>
             <Select>
                 <option value=''>Selecciones</option>
 
-                {opciones.map(opcion =>(
-                    <option 
+                {opciones.map(opcion => (
+                    <option
                     key={opcion.id}
                     value={opcion.id}
                     >{opcion.nombre}</option>
                 ))}
             </Select>
         </>
-    )
-    return [ SelectMonedas ]
+  )
+  return [SelectMonedas]
 }
-
 export default useSelectMonedas
