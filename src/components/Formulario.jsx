@@ -69,7 +69,6 @@ const Formulario = ({ setMonedas }) => {
     onSubmit={handleSubmit}>
         <SelectMonedas/>
       <SelectCriptomoneda />
-        {moneda}
         <InputSubmit
             type="submit"
             value='Cotizar' />
